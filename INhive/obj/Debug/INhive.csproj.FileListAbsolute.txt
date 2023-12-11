@@ -1,0 +1,100 @@
+D:\windows forms\INhive\INhive\bin\Debug\INhive.exe.config
+D:\windows forms\INhive\INhive\bin\Debug\INhive.exe
+D:\windows forms\INhive\INhive\bin\Debug\INhive.pdb
+D:\windows forms\INhive\INhive\bin\Debug\Guna.UI2.dll
+D:\windows forms\INhive\INhive\bin\Debug\Siticone.Desktop.UI.dll
+D:\windows forms\INhive\INhive\obj\Debug\INhive.csproj.AssemblyReference.cache
+D:\windows forms\INhive\INhive\obj\Debug\INhive.CustomeMessageBox.resources
+D:\windows forms\INhive\INhive\obj\Debug\INhive.Admin.resources
+D:\windows forms\INhive\INhive\obj\Debug\INhive.Properties.Resources.resources
+D:\windows forms\INhive\INhive\obj\Debug\INhive.Register.resources
+D:\windows forms\INhive\INhive\obj\Debug\INhive.csproj.GenerateResource.cache
+D:\windows forms\INhive\INhive\obj\Debug\INhive.csproj.CoreCompileInputs.cache
+D:\windows forms\INhive\INhive\obj\Debug\INhive.csproj.CopyComplete
+D:\windows forms\INhive\INhive\obj\Debug\INhive.exe
+D:\windows forms\INhive\INhive\obj\Debug\INhive.pdb
+D:\windows forms\INhive\INhive\obj\Debug\INhive.StockData.resources
+D:\windows forms\INhive\INhive\obj\Debug\INhive.DashBoard.resources
+D:\windows forms\INhive\INhive\obj\Debug\INhive.Login.resources
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\bin\Debug\INhive.exe.config
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\bin\Debug\INhive.exe
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\bin\Debug\INhive.pdb
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\bin\Debug\Guna.UI2.dll
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\bin\Debug\Siticone.Desktop.UI.dll
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.csproj.AssemblyReference.cache
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.CustomeMessageBox.resources
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.Admin.resources
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.DashBoard.resources
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.Login.resources
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.Properties.Resources.resources
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.Register.resources
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.StockData.resources
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.csproj.GenerateResource.cache
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.csproj.CoreCompileInputs.cache
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.csproj.CopyComplete
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.exe
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.pdb
+C:\Users\Rola\Desktop\FinalProject\INHive\INhive\obj\Debug\INhive.Explore.resources
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.csproj.AssemblyReference.cache
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.CustomeMessageBox.resources
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.Admin.resources
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.Dashboard.resources
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.Explore.resources
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.Login.resources
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.Properties.Resources.resources
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.Register.resources
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.StockData.resources
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.csproj.GenerateResource.cache
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.csproj.CoreCompileInputs.cache
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.exe
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.pdb
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\bin\Debug\INhive.exe.config
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\bin\Debug\INhive.exe
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\bin\Debug\INhive.pdb
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\bin\Debug\Guna.UI2.dll
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\bin\Debug\Siticone.Desktop.UI.dll
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.csproj.CopyComplete
+E:\Users\Ibrahim\Downloads\INhive-main\INhive-main\INhive\obj\Debug\INhive.Home.resources
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\bin\Debug\INhive.exe.config
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\bin\Debug\INhive.exe
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\bin\Debug\INhive.pdb
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\bin\Debug\Guna.UI2.dll
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\bin\Debug\Siticone.Desktop.UI.dll
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.csproj.AssemblyReference.cache
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.CustomeMessageBox.resources
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.Admin.resources
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.Dashboard.resources
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.Explore.resources
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.Home.resources
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.Login.resources
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.Properties.Resources.resources
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.Register.resources
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.StockData.resources
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.csproj.GenerateResource.cache
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.csproj.CoreCompileInputs.cache
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.csproj.CopyComplete
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.exe
+E:\Users\Ibrahim\Downloads\تعديل تصليح الdata base\INhive-main\INhive\obj\Debug\INhive.pdb
+D:\windows forms\testing\INhive\bin\Debug\INhive.exe.config
+D:\windows forms\testing\INhive\bin\Debug\INhive.exe
+D:\windows forms\testing\INhive\bin\Debug\INhive.pdb
+D:\windows forms\testing\INhive\bin\Debug\Guna.UI2.dll
+D:\windows forms\testing\INhive\bin\Debug\Siticone.Desktop.UI.dll
+D:\windows forms\testing\INhive\obj\Debug\INhive.csproj.AssemblyReference.cache
+D:\windows forms\testing\INhive\obj\Debug\INhive.CustomeMessageBox.resources
+D:\windows forms\testing\INhive\obj\Debug\INhive.Admin.resources
+D:\windows forms\testing\INhive\obj\Debug\INhive.Dashboard.resources
+D:\windows forms\testing\INhive\obj\Debug\INhive.Explore.resources
+D:\windows forms\testing\INhive\obj\Debug\INhive.Home.resources
+D:\windows forms\testing\INhive\obj\Debug\INhive.Login.resources
+D:\windows forms\testing\INhive\obj\Debug\INhive.Properties.Resources.resources
+D:\windows forms\testing\INhive\obj\Debug\INhive.Register.resources
+D:\windows forms\testing\INhive\obj\Debug\INhive.StockData.resources
+D:\windows forms\testing\INhive\obj\Debug\INhive.csproj.GenerateResource.cache
+D:\windows forms\testing\INhive\obj\Debug\INhive.csproj.CoreCompileInputs.cache
+D:\windows forms\testing\INhive\obj\Debug\INhive.csproj.CopyComplete
+D:\windows forms\testing\INhive\obj\Debug\INhive.exe
+D:\windows forms\testing\INhive\obj\Debug\INhive.pdb
+D:\windows forms\testing\INhive\obj\Debug\INhive.BuyStock.resources
+D:\windows forms\testing\INhive\obj\Debug\INhive.Stocks.resources
