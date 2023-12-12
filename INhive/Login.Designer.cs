@@ -97,7 +97,7 @@ namespace INhive
             this.CreateButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CreateButton.Name = "CreateButton";
             this.CreateButton.Size = new System.Drawing.Size(269, 28);
-            this.CreateButton.TabIndex = 5;
+            this.CreateButton.TabIndex = 4;
             this.CreateButton.Text = "Create Account ";
             this.CreateButton.Click += new System.EventHandler(this.CreateButton_Click_1);
             // 
@@ -108,7 +108,7 @@ namespace INhive
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(126, 21);
-            this.checkBox1.TabIndex = 7;
+            this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
@@ -131,7 +131,7 @@ namespace INhive
             this.LoginButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(197, 45);
-            this.LoginButton.TabIndex = 4;
+            this.LoginButton.TabIndex = 3;
             this.LoginButton.Text = "LOGIN";
             this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click_1);
             // 
@@ -157,7 +157,7 @@ namespace INhive
             this.EmailTextBox.PlaceholderText = "Email Address";
             this.EmailTextBox.SelectedText = "";
             this.EmailTextBox.Size = new System.Drawing.Size(331, 36);
-            this.EmailTextBox.TabIndex = 3;
+            this.EmailTextBox.TabIndex = 0;
             // 
             // passwordTextBox
             // 
@@ -181,7 +181,7 @@ namespace INhive
             this.passwordTextBox.PlaceholderText = "Password";
             this.passwordTextBox.SelectedText = "";
             this.passwordTextBox.Size = new System.Drawing.Size(331, 37);
-            this.passwordTextBox.TabIndex = 2;
+            this.passwordTextBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -213,6 +213,7 @@ namespace INhive
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1875, 826);
             this.Controls.Add(this.guna2Panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";

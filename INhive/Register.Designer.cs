@@ -36,6 +36,7 @@ namespace INhive
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.emailvalidation = new System.Windows.Forms.Label();
             this.messagePasswprd = new System.Windows.Forms.Label();
             this.confirmpassTextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,7 +56,6 @@ namespace INhive
             this.siticonePasswordValidationTool1 = new Siticone.Desktop.UI.Winforms.SiticonePasswordValidationTool();
             this.siticoneEmailValidatingTool1 = new Siticone.Desktop.UI.Winforms.SiticoneEmailValidatingTool();
             this.siticoneCreditCardValidationTool1 = new Siticone.Desktop.UI.Winforms.SiticoneCreditCardValidationTool();
-            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +88,17 @@ namespace INhive
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(460, 640);
             this.guna2Panel1.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Olive;
+            this.label3.Location = new System.Drawing.Point(131, 549);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(194, 20);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Already Have An Account?";
             // 
             // emailvalidation
             // 
@@ -127,7 +138,7 @@ namespace INhive
             this.confirmpassTextBox1.PlaceholderText = "Confirm Password";
             this.confirmpassTextBox1.SelectedText = "";
             this.confirmpassTextBox1.Size = new System.Drawing.Size(333, 29);
-            this.confirmpassTextBox1.TabIndex = 15;
+            this.confirmpassTextBox1.TabIndex = 6;
             // 
             // phoneErrorLabel
             // 
@@ -142,7 +153,7 @@ namespace INhive
             // 
             this.requiredFieldsLabel.AutoSize = true;
             this.requiredFieldsLabel.ForeColor = System.Drawing.Color.Red;
-            this.requiredFieldsLabel.Location = new System.Drawing.Point(118, 526);
+            this.requiredFieldsLabel.Location = new System.Drawing.Point(132, 520);
             this.requiredFieldsLabel.Name = "requiredFieldsLabel";
             this.requiredFieldsLabel.Size = new System.Drawing.Size(0, 17);
             this.requiredFieldsLabel.TabIndex = 13;
@@ -161,11 +172,11 @@ namespace INhive
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Yellow;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(121, 571);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(128, 584);
             this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(197, 45);
-            this.guna2GradientButton1.TabIndex = 11;
+            this.guna2GradientButton1.TabIndex = 9;
             this.guna2GradientButton1.Text = "LOGIN";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
@@ -191,7 +202,7 @@ namespace INhive
             this.phoneTextBox3.PlaceholderText = "Phone Number";
             this.phoneTextBox3.SelectedText = "";
             this.phoneTextBox3.Size = new System.Drawing.Size(333, 29);
-            this.phoneTextBox3.TabIndex = 9;
+            this.phoneTextBox3.TabIndex = 4;
             // 
             // passwordTextBox4
             // 
@@ -215,7 +226,7 @@ namespace INhive
             this.passwordTextBox4.PlaceholderText = "Password";
             this.passwordTextBox4.SelectedText = "";
             this.passwordTextBox4.Size = new System.Drawing.Size(333, 29);
-            this.passwordTextBox4.TabIndex = 8;
+            this.passwordTextBox4.TabIndex = 5;
             // 
             // usernameTextBox1
             // 
@@ -239,7 +250,7 @@ namespace INhive
             this.usernameTextBox1.PlaceholderText = "User Name";
             this.usernameTextBox1.SelectedText = "";
             this.usernameTextBox1.Size = new System.Drawing.Size(333, 29);
-            this.usernameTextBox1.TabIndex = 7;
+            this.usernameTextBox1.TabIndex = 2;
             // 
             // emailTextBox2
             // 
@@ -263,7 +274,7 @@ namespace INhive
             this.emailTextBox2.PlaceholderText = "Email";
             this.emailTextBox2.SelectedText = "";
             this.emailTextBox2.Size = new System.Drawing.Size(333, 29);
-            this.emailTextBox2.TabIndex = 6;
+            this.emailTextBox2.TabIndex = 3;
             // 
             // CreateAccountButton
             // 
@@ -283,7 +294,7 @@ namespace INhive
             this.CreateAccountButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CreateAccountButton.Name = "CreateAccountButton";
             this.CreateAccountButton.Size = new System.Drawing.Size(197, 45);
-            this.CreateAccountButton.TabIndex = 4;
+            this.CreateAccountButton.TabIndex = 7;
             this.CreateAccountButton.Text = "Create Account";
             this.CreateAccountButton.Click += new System.EventHandler(this.CreateAccountButton_Click_1);
             // 
@@ -309,7 +320,7 @@ namespace INhive
             this.fnameTextBox.PlaceholderText = "First Name";
             this.fnameTextBox.SelectedText = "";
             this.fnameTextBox.Size = new System.Drawing.Size(333, 29);
-            this.fnameTextBox.TabIndex = 3;
+            this.fnameTextBox.TabIndex = 0;
             // 
             // lnameTextBox
             // 
@@ -333,7 +344,7 @@ namespace INhive
             this.lnameTextBox.PlaceholderText = "Last Name";
             this.lnameTextBox.SelectedText = "";
             this.lnameTextBox.Size = new System.Drawing.Size(333, 29);
-            this.lnameTextBox.TabIndex = 2;
+            this.lnameTextBox.TabIndex = 1;
             // 
             // label2
             // 
@@ -372,17 +383,6 @@ namespace INhive
             this.siticoneEmailValidatingTool1.EmailTextbox = this.emailTextBox2;
             this.siticoneEmailValidatingTool1.MessageDescription = this.emailvalidation;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Olive;
-            this.label3.Location = new System.Drawing.Point(131, 534);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Already Have An Account?";
-            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -391,6 +391,7 @@ namespace INhive
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1815, 826);
             this.Controls.Add(this.guna2Panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Register";

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace INhive
 {
     public partial class Stocks : Form
     {
+        SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-F7CTSK1\SQLEXPRESS;Initial Catalog=stock_market;Integrated Security=True;");
         private int userId;
         public Stocks(int userId = 1)
         {
@@ -45,9 +47,22 @@ namespace INhive
             } else
             {
                 string ticker = buy_label.Text;
-                StockData stockData = new StockData(ticker, userId);
-                stockData.Show();
-                this.Hide();
+                cn.Open();
+
+                SqlCommand cm = new SqlCommand("SELECT * FROM stocks WHERE ticker = '" + ticker + "';", cn);
+                SqlDataReader rdr = cm.ExecuteReader();
+                if (rdr.HasRows)
+                {
+                    StockData stockData = new StockData(ticker, userId);
+                    stockData.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Enter a correct ticker", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                cn.Close();
             }
         }
     }

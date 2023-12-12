@@ -37,7 +37,9 @@ namespace INhive
                 if (ardr.HasRows)
                 {
                     wrong.Text = "";
-                    Admin admin = new Admin();
+                    ardr.Read();
+                    int adminId = int.Parse(ardr["admin_id"].ToString());
+                    Admin admin = new Admin(adminId);
                     this.Hide();
                     admin.Show();
                 }
@@ -51,7 +53,9 @@ namespace INhive
                     if (rdr.HasRows)
                     {
                         wrong.Text = "";
-                        Home Home = new Home();
+                        rdr.Read();
+                        int userId = int.Parse(rdr["user_id"].ToString());
+                        Home Home = new Home(userId);
                         this.Hide();
                         Home.Show();
                         // User login logic

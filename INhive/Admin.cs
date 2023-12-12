@@ -15,7 +15,7 @@ namespace INhive
     {
         SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-F7CTSK1\SQLEXPRESS;Initial Catalog=stock_market;Integrated Security=True;");
         
-        public Admin()
+        public Admin(int adminId = 1)
         {
             InitializeComponent();
 
@@ -42,6 +42,18 @@ namespace INhive
             {
                 marketCap_number.Text = rdr2["SumOfStockPrice"].ToString();
             }
+            cn.Close();
+
+            cn.Open();
+            SqlCommand cm3 = new SqlCommand("SELECT * FROM admin WHERE admin_id = '" + adminId + "'", cn);
+            SqlDataReader rdr3 = cm3.ExecuteReader();
+            rdr3.Read();
+            string firstName = rdr3["first_name"].ToString();
+            string lastName = rdr3["last_name"].ToString();
+            string capitalizedFirstName = char.ToUpper(firstName[0]) + firstName.Substring(1);
+            string capitalizedLastName = char.ToUpper(lastName[0]) + lastName.Substring(1);
+            label1.Text = capitalizedFirstName + " " + capitalizedLastName;
+            label5.Text = capitalizedFirstName;
             cn.Close();
         }
 

@@ -2,6 +2,10 @@
 using System;
 using System.Data.SqlClient;
 using Guna.UI2.WinForms;
+using System.Net;
+using System.Net.Mail;
+using System.Drawing;
+using Siticone.Desktop.UI.WinForms;
 
 namespace INhive
 {
@@ -10,7 +14,7 @@ namespace INhive
         SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-F7CTSK1\SQLEXPRESS;Initial Catalog=stock_market;Integrated Security=True;");
         private int userId;
         private string ticker;
-        public BuyStock(string ticker = "", int userId = 1)
+        public BuyStock(string ticker = "AAPL", int userId = 1)
         {
             InitializeComponent();
             siticoneHtmlLabel1.Text = ticker;
@@ -31,8 +35,6 @@ namespace INhive
             if (rdr2.Read())
             {
                 label1.Text = rdr2["first_name"].ToString();
-
-
             }
             cn.Close();
         }
@@ -54,29 +56,8 @@ namespace INhive
 
         private void siticoneButton6_Click(object sender, EventArgs e)
         {
-            int num_of_shares = int.Parse(num_of_stocks.Text);
-            cn.Open();
-
-            SqlCommand cm = new SqlCommand(@"SELECT shares FROM owned_stocks WHERE user_id = '"+userId+"' and ticker = '"+ticker+"'", cn);
-            SqlDataReader rdr = cm.ExecuteReader();
-            if (rdr.Read())
-            {
-                int shares = int.Parse(rdr["shares"].ToString());
-                rdr.Close();
-
-                SqlCommand cm1 = new SqlCommand(@"UPDATE [dbo].[owned_stocks] SET shares = '"+ (shares+num_of_shares) +"' WHERE user_id = '"+ userId +"' and ticker = '"+ ticker +"'", cn);
-                cm1.ExecuteNonQuery();
-            } else
-            {
-                rdr.Close();
-
-                SqlCommand cm2 = new SqlCommand(@"INSERT INTO [dbo].[owned_stocks] (shares, market_value, purchase_price, purchase_value, unrealized_return, total_market_value, total_purchase_value, user_id, ticker) VALUES ('" + num_of_shares + "', 1000, 198, 1456, 50, 1400, 1990, '" + userId +"', '"+ ticker +"');", cn);
-                cm2.ExecuteNonQuery();
-            }
-            cn.Close();
-            MessageBox.Show("Shares have been added to your account successfuly");
-
-
+            Payment payment = new Payment(userId, ticker, int.Parse(num_of_stocks.Text));
+            payment.Show();
         }
 
         private void siticoneButton2_Click(object sender, EventArgs e)
@@ -99,10 +80,45 @@ namespace INhive
                 } else
                 {
                     MessageBox.Show("not enough shares");
-                }
-                
+                } 
             }
             cn.Close();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(siticoneTextBox2.Text))
+            {
+                MessageBox.Show("Enter a ticker name to buy first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string ticker = siticoneTextBox2.Text;
+
+                cn.Open();
+
+                SqlCommand cm = new SqlCommand("SELECT * FROM stocks WHERE ticker = '" + ticker + "';", cn);
+                SqlDataReader rdr = cm.ExecuteReader();
+                if (rdr.HasRows)
+                {
+                    StockData stockData = new StockData(ticker, userId);
+                    stockData.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Enter a correct ticker", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                cn.Close();
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Stocks stocks = new Stocks();
+            stocks.Show();
+            this.Hide();
         }
     }
 }

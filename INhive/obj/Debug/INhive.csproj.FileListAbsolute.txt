@@ -98,3 +98,26 @@ D:\windows forms\testing\INhive\obj\Debug\INhive.exe
 D:\windows forms\testing\INhive\obj\Debug\INhive.pdb
 D:\windows forms\testing\INhive\obj\Debug\INhive.BuyStock.resources
 D:\windows forms\testing\INhive\obj\Debug\INhive.Stocks.resources
+D:\windows forms\testing - Copy\INhive\bin\Debug\INhive.exe.config
+D:\windows forms\testing - Copy\INhive\bin\Debug\INhive.exe
+D:\windows forms\testing - Copy\INhive\bin\Debug\INhive.pdb
+D:\windows forms\testing - Copy\INhive\bin\Debug\Guna.UI2.dll
+D:\windows forms\testing - Copy\INhive\bin\Debug\Siticone.Desktop.UI.dll
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.csproj.AssemblyReference.cache
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.BuyStock.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.CustomeMessageBox.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.Admin.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.Dashboard.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.Explore.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.Home.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.Login.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.Properties.Resources.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.Register.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.StockData.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.Stocks.resources
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.csproj.GenerateResource.cache
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.csproj.CoreCompileInputs.cache
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.csproj.CopyComplete
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.exe
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.pdb
+D:\windows forms\testing - Copy\INhive\obj\Debug\INhive.Payment.resources

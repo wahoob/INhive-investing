@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Siticone.Desktop.UI.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,23 +16,19 @@ namespace INhive
     public partial class Dashboard : Form
     {
         SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-F7CTSK1\SQLEXPRESS;Initial Catalog=stock_market;Integrated Security=True;");
-        string ticker = "AAPL";
-        int user_id = 1;
-        public Dashboard()
+        private int userId;
+        public Dashboard(int userId = 1)
         {
             InitializeComponent();
-        }
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Home Home = new Home();
-            this.Hide();
-            Home.Show();
-        }
-        private void siticoneButton2_Click(object sender, EventArgs e)
-        {
-            Explore Explore = new Explore();
-            this.Hide();
-            Explore.Show();
+            this.userId = userId;
+            cn.Open();
+            SqlCommand cm = new SqlCommand("SELECT first_name FROM users WHERE user_id = '" + userId + "'", cn);
+            SqlDataReader rdr = cm.ExecuteReader();
+            if (rdr.Read())
+            {
+                label1.Text = rdr["first_name"].ToString();
+            }
+            cn.Close();
         }
         private void Dashboard_Load(object sender, EventArgs e)
         {
@@ -42,7 +39,7 @@ namespace INhive
             cn.Open();
 
             SqlCommand cm = new SqlCommand(query, cn);
-            cm.Parameters.AddWithValue("@UserId", user_id);
+            cm.Parameters.AddWithValue("@UserId", userId);
             DataTable dataTable = new DataTable();
             using (SqlDataAdapter adapter = new SqlDataAdapter(cm))
             {
@@ -51,6 +48,45 @@ namespace INhive
             guna2DataGridView2.DataSource = dataTable;
 
             cn.Close();
+        }
+        public int UserId
+        {
+            get { return userId; }
+        }
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Home Home = new Home(userId);
+            this.Hide();
+            Home.Show();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(siticoneTextBox2.Text))
+            {
+                MessageBox.Show("Enter a ticker name to buy first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string ticker = siticoneTextBox2.Text;
+
+                cn.Open();
+
+                SqlCommand cm = new SqlCommand("SELECT * FROM stocks WHERE ticker = '" + ticker + "';", cn);
+                SqlDataReader rdr = cm.ExecuteReader();
+                if (rdr.HasRows)
+                {
+                    StockData stockData = new StockData(ticker, userId);
+                    stockData.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Enter a correct ticker", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                cn.Close();
+            }
         }
     }
 }
