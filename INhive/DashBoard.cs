@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 
 namespace INhive
@@ -48,6 +49,75 @@ namespace INhive
             guna2DataGridView2.DataSource = dataTable;
 
             cn.Close();
+
+            cn.Open();
+
+            string total_purchase_value_q = "SELECT SUM(purchase_value) AS total_purchase_value FROM owned_stocks WHERE user_id = @user_id;";
+            SqlCommand total_purchase_value = new SqlCommand(total_purchase_value_q, cn);
+            total_purchase_value.Parameters.AddWithValue("@user_id", userId);
+
+            string total_market_value_q = "SELECT SUM(market_value) AS total_market_value FROM owned_stocks WHERE user_id = @user_id;";
+            SqlCommand total_market_value = new SqlCommand(total_market_value_q, cn);
+            total_market_value.Parameters.AddWithValue("@user_id", userId);
+
+            // Get the total purchase value as a decimal
+            decimal purchaseValue = 0;
+            object purchaseValueResult = total_purchase_value.ExecuteScalar();
+            if (purchaseValueResult != null && purchaseValueResult != DBNull.Value)
+            {
+                purchaseValue = Convert.ToDecimal(purchaseValueResult);
+            }
+
+            // Get the total market value as a decimal
+            decimal marketValue = 0;
+            object marketValueResult = total_market_value.ExecuteScalar();
+            if (marketValueResult != null && marketValueResult != DBNull.Value)
+            {
+                marketValue = Convert.ToDecimal(marketValueResult);
+            }
+
+            // Set the values to your controls
+            purchase_value.Text = purchaseValue.ToString();
+            siticoneHtmlLabel19.Text = marketValue.ToString();
+
+            decimal difference = marketValue - purchaseValue;
+            siticoneHtmlLabel20.Text = difference.ToString();
+
+            decimal percentageDifference = 0;
+
+            if (purchaseValue != 0)
+            {
+                percentageDifference = Math.Round(((marketValue - purchaseValue) / purchaseValue) * 100, 1);
+            }
+
+            siticoneHtmlLabel22.Text = percentageDifference.ToString() + "%";
+
+
+            cn.Close();
+
+
+
+
+            // Initialize the Chart object
+            chart1 = new Chart();
+            chart1.Size = new System.Drawing.Size(300, 300);
+            chart1.Location = new System.Drawing.Point(100, 150);
+
+            // Create a ChartArea
+            ChartArea chartArea1 = new ChartArea();
+            chart1.ChartAreas.Add(chartArea1);
+
+            // Create a Series with Pie chart type
+            Series series1 = new Series();
+            series1.ChartType = SeriesChartType.Pie;
+            series1.Points.AddXY("Profit", percentageDifference);
+
+            series1.Points.AddXY("Base", purchaseValue);
+
+            chart1.Series.Add(series1);
+
+            // Add the Chart to the form
+            this.Controls.Add(chart1);
         }
         public int UserId
         {

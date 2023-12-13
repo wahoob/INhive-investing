@@ -29,23 +29,34 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.stock_marketDataSet = new INhive.stock_marketDataSet();
             this.stocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stocksTableAdapter = new INhive.stock_marketDataSetTableAdapters.stocksTableAdapter();
             this.tableAdapterManager1 = new INhive.stock_marketDataSetTableAdapters.TableAdapterManager();
             this.tableAdapterManager2 = new INhive.stock_marketDataSetTableAdapters.TableAdapterManager();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.tickerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sharetypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subsecriptionfrequencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paybackperiodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expenseratioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dailychangeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stockpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.closepriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sectorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marketcapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -111,17 +122,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.tickerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sharetypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subsecriptionfrequencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paybackperiodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expenseratioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dailychangeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stockpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.closepriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sectorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.marketcapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.stock_marketDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stocksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -182,26 +182,26 @@
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
             this.guna2DataGridView1.AllowUserToResizeColumns = false;
             this.guna2DataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2DataGridView1.AutoGenerateColumns = false;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 50;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -217,32 +217,32 @@
             this.sectorDataGridViewTextBoxColumn,
             this.marketcapDataGridViewTextBoxColumn});
             this.guna2DataGridView1.DataSource = this.stocksBindingSource;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(6, 75);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.guna2DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.guna2DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridView1.RowTemplate.Height = 35;
             this.guna2DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.guna2DataGridView1.Size = new System.Drawing.Size(1360, 321);
@@ -268,6 +268,94 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 35;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // tickerDataGridViewTextBoxColumn
+            // 
+            this.tickerDataGridViewTextBoxColumn.DataPropertyName = "ticker";
+            this.tickerDataGridViewTextBoxColumn.HeaderText = "ticker";
+            this.tickerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tickerDataGridViewTextBoxColumn.Name = "tickerDataGridViewTextBoxColumn";
+            this.tickerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sharetypeDataGridViewTextBoxColumn
+            // 
+            this.sharetypeDataGridViewTextBoxColumn.DataPropertyName = "share_type";
+            this.sharetypeDataGridViewTextBoxColumn.HeaderText = "share type";
+            this.sharetypeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.sharetypeDataGridViewTextBoxColumn.Name = "sharetypeDataGridViewTextBoxColumn";
+            this.sharetypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // subsecriptionfrequencyDataGridViewTextBoxColumn
+            // 
+            this.subsecriptionfrequencyDataGridViewTextBoxColumn.DataPropertyName = "subsecription_frequency";
+            this.subsecriptionfrequencyDataGridViewTextBoxColumn.HeaderText = "subsecription frequency";
+            this.subsecriptionfrequencyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.subsecriptionfrequencyDataGridViewTextBoxColumn.Name = "subsecriptionfrequencyDataGridViewTextBoxColumn";
+            this.subsecriptionfrequencyDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // paybackperiodDataGridViewTextBoxColumn
+            // 
+            this.paybackperiodDataGridViewTextBoxColumn.DataPropertyName = "payback_period";
+            this.paybackperiodDataGridViewTextBoxColumn.HeaderText = "payback period";
+            this.paybackperiodDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.paybackperiodDataGridViewTextBoxColumn.Name = "paybackperiodDataGridViewTextBoxColumn";
+            this.paybackperiodDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // expenseratioDataGridViewTextBoxColumn
+            // 
+            this.expenseratioDataGridViewTextBoxColumn.DataPropertyName = "expense_ratio";
+            this.expenseratioDataGridViewTextBoxColumn.HeaderText = "expense ratio";
+            this.expenseratioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.expenseratioDataGridViewTextBoxColumn.Name = "expenseratioDataGridViewTextBoxColumn";
+            this.expenseratioDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dailychangeDataGridViewTextBoxColumn
+            // 
+            this.dailychangeDataGridViewTextBoxColumn.DataPropertyName = "daily_change";
+            this.dailychangeDataGridViewTextBoxColumn.HeaderText = "daily change";
+            this.dailychangeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dailychangeDataGridViewTextBoxColumn.Name = "dailychangeDataGridViewTextBoxColumn";
+            this.dailychangeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // stockpriceDataGridViewTextBoxColumn
+            // 
+            this.stockpriceDataGridViewTextBoxColumn.DataPropertyName = "stock_price";
+            this.stockpriceDataGridViewTextBoxColumn.HeaderText = "stock price";
+            this.stockpriceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.stockpriceDataGridViewTextBoxColumn.Name = "stockpriceDataGridViewTextBoxColumn";
+            this.stockpriceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // closepriceDataGridViewTextBoxColumn
+            // 
+            this.closepriceDataGridViewTextBoxColumn.DataPropertyName = "close_price";
+            this.closepriceDataGridViewTextBoxColumn.HeaderText = "close price";
+            this.closepriceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.closepriceDataGridViewTextBoxColumn.Name = "closepriceDataGridViewTextBoxColumn";
+            this.closepriceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // companynameDataGridViewTextBoxColumn
+            // 
+            this.companynameDataGridViewTextBoxColumn.DataPropertyName = "company_name";
+            this.companynameDataGridViewTextBoxColumn.HeaderText = "company name";
+            this.companynameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.companynameDataGridViewTextBoxColumn.Name = "companynameDataGridViewTextBoxColumn";
+            this.companynameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sectorDataGridViewTextBoxColumn
+            // 
+            this.sectorDataGridViewTextBoxColumn.DataPropertyName = "sector";
+            this.sectorDataGridViewTextBoxColumn.HeaderText = "sector";
+            this.sectorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.sectorDataGridViewTextBoxColumn.Name = "sectorDataGridViewTextBoxColumn";
+            this.sectorDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // marketcapDataGridViewTextBoxColumn
+            // 
+            this.marketcapDataGridViewTextBoxColumn.DataPropertyName = "market_cap";
+            this.marketcapDataGridViewTextBoxColumn.HeaderText = "market cap";
+            this.marketcapDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.marketcapDataGridViewTextBoxColumn.Name = "marketcapDataGridViewTextBoxColumn";
+            this.marketcapDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // guna2Panel2
             // 
@@ -495,26 +583,26 @@
             this.guna2DataGridView2.AllowUserToDeleteRows = false;
             this.guna2DataGridView2.AllowUserToResizeColumns = false;
             this.guna2DataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle16.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
-            this.guna2DataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.guna2DataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2DataGridView2.AutoGenerateColumns = false;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle17.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(248)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.guna2DataGridView2.ColumnHeadersHeight = 50;
             this.guna2DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView2.ColumnHeadersVisible = false;
@@ -526,32 +614,32 @@
             this.lastnameDataGridViewTextBoxColumn,
             this.phonenumberDataGridViewTextBoxColumn});
             this.guna2DataGridView2.DataSource = this.usersBindingSource3;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle8;
             this.guna2DataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2DataGridView2.Location = new System.Drawing.Point(3, 77);
             this.guna2DataGridView2.Name = "guna2DataGridView2";
             this.guna2DataGridView2.ReadOnly = true;
             this.guna2DataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridView2.RowHeadersVisible = false;
             this.guna2DataGridView2.RowHeadersWidth = 51;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.guna2DataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.guna2DataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.guna2DataGridView2.RowTemplate.Height = 35;
             this.guna2DataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.guna2DataGridView2.Size = new System.Drawing.Size(1358, 303);
@@ -1028,94 +1116,6 @@
             this.label9.Size = new System.Drawing.Size(175, 60);
             this.label9.TabIndex = 22;
             this.label9.Text = "INhive";
-            // 
-            // tickerDataGridViewTextBoxColumn
-            // 
-            this.tickerDataGridViewTextBoxColumn.DataPropertyName = "ticker";
-            this.tickerDataGridViewTextBoxColumn.HeaderText = "ticker";
-            this.tickerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tickerDataGridViewTextBoxColumn.Name = "tickerDataGridViewTextBoxColumn";
-            this.tickerDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sharetypeDataGridViewTextBoxColumn
-            // 
-            this.sharetypeDataGridViewTextBoxColumn.DataPropertyName = "share_type";
-            this.sharetypeDataGridViewTextBoxColumn.HeaderText = "share type";
-            this.sharetypeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.sharetypeDataGridViewTextBoxColumn.Name = "sharetypeDataGridViewTextBoxColumn";
-            this.sharetypeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // subsecriptionfrequencyDataGridViewTextBoxColumn
-            // 
-            this.subsecriptionfrequencyDataGridViewTextBoxColumn.DataPropertyName = "subsecription_frequency";
-            this.subsecriptionfrequencyDataGridViewTextBoxColumn.HeaderText = "subsecription frequency";
-            this.subsecriptionfrequencyDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.subsecriptionfrequencyDataGridViewTextBoxColumn.Name = "subsecriptionfrequencyDataGridViewTextBoxColumn";
-            this.subsecriptionfrequencyDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // paybackperiodDataGridViewTextBoxColumn
-            // 
-            this.paybackperiodDataGridViewTextBoxColumn.DataPropertyName = "payback_period";
-            this.paybackperiodDataGridViewTextBoxColumn.HeaderText = "payback period";
-            this.paybackperiodDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.paybackperiodDataGridViewTextBoxColumn.Name = "paybackperiodDataGridViewTextBoxColumn";
-            this.paybackperiodDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // expenseratioDataGridViewTextBoxColumn
-            // 
-            this.expenseratioDataGridViewTextBoxColumn.DataPropertyName = "expense_ratio";
-            this.expenseratioDataGridViewTextBoxColumn.HeaderText = "expense ratio";
-            this.expenseratioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.expenseratioDataGridViewTextBoxColumn.Name = "expenseratioDataGridViewTextBoxColumn";
-            this.expenseratioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dailychangeDataGridViewTextBoxColumn
-            // 
-            this.dailychangeDataGridViewTextBoxColumn.DataPropertyName = "daily_change";
-            this.dailychangeDataGridViewTextBoxColumn.HeaderText = "daily change";
-            this.dailychangeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dailychangeDataGridViewTextBoxColumn.Name = "dailychangeDataGridViewTextBoxColumn";
-            this.dailychangeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // stockpriceDataGridViewTextBoxColumn
-            // 
-            this.stockpriceDataGridViewTextBoxColumn.DataPropertyName = "stock_price";
-            this.stockpriceDataGridViewTextBoxColumn.HeaderText = "stock price";
-            this.stockpriceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.stockpriceDataGridViewTextBoxColumn.Name = "stockpriceDataGridViewTextBoxColumn";
-            this.stockpriceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // closepriceDataGridViewTextBoxColumn
-            // 
-            this.closepriceDataGridViewTextBoxColumn.DataPropertyName = "close_price";
-            this.closepriceDataGridViewTextBoxColumn.HeaderText = "close price";
-            this.closepriceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.closepriceDataGridViewTextBoxColumn.Name = "closepriceDataGridViewTextBoxColumn";
-            this.closepriceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // companynameDataGridViewTextBoxColumn
-            // 
-            this.companynameDataGridViewTextBoxColumn.DataPropertyName = "company_name";
-            this.companynameDataGridViewTextBoxColumn.HeaderText = "company name";
-            this.companynameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.companynameDataGridViewTextBoxColumn.Name = "companynameDataGridViewTextBoxColumn";
-            this.companynameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sectorDataGridViewTextBoxColumn
-            // 
-            this.sectorDataGridViewTextBoxColumn.DataPropertyName = "sector";
-            this.sectorDataGridViewTextBoxColumn.HeaderText = "sector";
-            this.sectorDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.sectorDataGridViewTextBoxColumn.Name = "sectorDataGridViewTextBoxColumn";
-            this.sectorDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // marketcapDataGridViewTextBoxColumn
-            // 
-            this.marketcapDataGridViewTextBoxColumn.DataPropertyName = "market_cap";
-            this.marketcapDataGridViewTextBoxColumn.HeaderText = "market cap";
-            this.marketcapDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.marketcapDataGridViewTextBoxColumn.Name = "marketcapDataGridViewTextBoxColumn";
-            this.marketcapDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Admin
             // 

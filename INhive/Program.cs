@@ -16,7 +16,7 @@ namespace INhive
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StockData());
+            Application.Run(new Login());
         }
     }
 }

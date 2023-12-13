@@ -76,7 +76,7 @@ namespace INhive
                 {
                     SqlCommand cm1 = new SqlCommand(@"UPDATE [dbo].[owned_stocks] SET shares = '" + (shares - num_of_shares) + "' WHERE user_id = '" + userId + "' and ticker = '" + ticker + "'", cn);
                     cm1.ExecuteNonQuery();
-                    MessageBox.Show(num_of_shares + " has been solen");
+                    MessageBox.Show(num_of_shares + " has been sold");
                 } else
                 {
                     MessageBox.Show("not enough shares");
