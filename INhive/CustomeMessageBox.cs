@@ -137,7 +137,7 @@ namespace INhive
             } else
             {
                 DateTime currentDate = DateTime.Now;
-                string formattedDate = currentDate.ToString("d-M-yyyy");
+                string formattedDate = currentDate.ToString("yyyy-M-d");
                 
                 if (type == "stock_add")
                 {
@@ -154,7 +154,7 @@ namespace INhive
                 {
                     cn.Open();
 
-                    SqlCommand cm = new SqlCommand("UPDATE [dbo].[stocks] SET ticker = '" + ticker_input.Text + "', share_type = '" + shareType_input.Text + "', risk_profile = '" + set_risk_profile(shareType_input.Text) + "', subsecription_frequency = '" + subFreq_input.Text + "', payback_period = '" + paybackPeriod_input.Text + "', expense_ratio = '" + expenseRatio_input.Text + "', daily_change = '" + dailyChange_input.Text + "', stock_price = '" + stockPrice_input.Text + "', open_price = '" + stockPrice_input.Text + "', close_price = '" + closePrice_input.Text + "', average_price = '" + (int.Parse(stockPrice_input.Text) / 2).ToString() + "', date_data = '" + formattedDate + "', company_name = '" + companyName_input.Text + "', sector = '" + sector_input.Text + "', market_cap = '" + marketCap_input.Text + "', admin_id = '1' WHERE ticker = '" + ticker + "'", cn);
+                    SqlCommand cm = new SqlCommand("UPDATE [dbo].[stocks] SET ticker = '" + ticker_input.Text + "', share_type = '" + shareType_input.Text + "', risk_profile = '" + set_risk_profile(shareType_input.Text) + "', subsecription_frequency = '" + subFreq_input.Text + "', payback_period = '" + paybackPeriod_input.Text + "', expense_ratio = '" + expenseRatio_input.Text + "', daily_change = '" + dailyChange_input.Text + "', stock_price = '" + int.Parse(stockPrice_input.Text) + "', open_price = '" + stockPrice_input.Text + "', close_price = '" + closePrice_input.Text + "', average_price = '" + (int.Parse(stockPrice_input.Text) / 2).ToString() + "', date_data = '" + formattedDate + "', company_name = '" + companyName_input.Text + "', sector = '" + sector_input.Text + "', market_cap = '" + int.Parse(marketCap_input.Text) + "', admin_id = '1' WHERE ticker = '" + ticker + "'", cn);
                     cm.ExecuteNonQuery();
 
                     cn.Close();
