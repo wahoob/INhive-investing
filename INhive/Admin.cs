@@ -19,6 +19,22 @@ namespace INhive
         {
             InitializeComponent();
 
+            Set_Data();
+
+            cn.Open();
+            SqlCommand cm3 = new SqlCommand("SELECT * FROM admin WHERE admin_id = '" + adminId + "'", cn);
+            SqlDataReader rdr3 = cm3.ExecuteReader();
+            rdr3.Read();
+            string firstName = rdr3["first_name"].ToString();
+            string lastName = rdr3["last_name"].ToString();
+            string capitalizedFirstName = char.ToUpper(firstName[0]) + firstName.Substring(1);
+            string capitalizedLastName = char.ToUpper(lastName[0]) + lastName.Substring(1);
+            label1.Text = capitalizedFirstName + " " + capitalizedLastName;
+            label5.Text = capitalizedFirstName;
+            cn.Close();
+        }
+        private void Set_Data()
+        {
             cn.Open();
             SqlCommand cm = new SqlCommand("SELECT COUNT(*) AS NumberOfUsers FROM [dbo].[users]", cn);
             SqlDataReader rdr = cm.ExecuteReader();
@@ -42,18 +58,6 @@ namespace INhive
             {
                 marketCap_number.Text = rdr2["SumOfStockPrice"].ToString();
             }
-            cn.Close();
-
-            cn.Open();
-            SqlCommand cm3 = new SqlCommand("SELECT * FROM admin WHERE admin_id = '" + adminId + "'", cn);
-            SqlDataReader rdr3 = cm3.ExecuteReader();
-            rdr3.Read();
-            string firstName = rdr3["first_name"].ToString();
-            string lastName = rdr3["last_name"].ToString();
-            string capitalizedFirstName = char.ToUpper(firstName[0]) + firstName.Substring(1);
-            string capitalizedLastName = char.ToUpper(lastName[0]) + lastName.Substring(1);
-            label1.Text = capitalizedFirstName + " " + capitalizedLastName;
-            label5.Text = capitalizedFirstName;
             cn.Close();
         }
 
@@ -104,12 +108,19 @@ namespace INhive
                 {
                     cn.Open();
 
+                    SqlCommand cm1 = new SqlCommand("DELETE FROM owned_stocks WHERE user_id = '" + userId + "'", cn);
+                    cm1.ExecuteNonQuery();
+
+                    SqlCommand cm2 = new SqlCommand("DELETE FROM payment_details WHERE user_id = '" + userId + "'", cn);
+                    cm2.ExecuteNonQuery();
+
                     SqlCommand cm = new SqlCommand("DELETE FROM [dbo].[users] WHERE user_id = '" + userId + "'", cn);
                     cm.ExecuteNonQuery();
 
                     cn.Close();
                 }
                 this.usersTableAdapter3.Fill(this.stock_marketDataSet4.users);
+                Set_Data();
             }
         }
 
@@ -118,6 +129,7 @@ namespace INhive
             CustomeMessageBox customeMessageBox = new CustomeMessageBox("stock_add");
             customeMessageBox.StockDataUpdated += CustomeMessageBox_StockDataUpdated;
             customeMessageBox.ShowDialog();
+            Set_Data();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -148,12 +160,19 @@ namespace INhive
             DialogResult result = MessageBox.Show("Are you sure you want to delete this user?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (result == DialogResult.OK)
             {
-                cn.Open();
+                    cn.Open();
 
-                SqlCommand cm = new SqlCommand("DELETE FROM [dbo].[stocks] WHERE ticker = '" + ticker + "'", cn);
-                cm.ExecuteNonQuery();
+                    SqlCommand cm1 = new SqlCommand("DELETE FROM [dbo].[stock_prices_for_chart] WHERE ticker = '" + ticker + "'", cn);
+                    cm1.ExecuteNonQuery();
 
-                cn.Close();
+                    SqlCommand cm2 = new SqlCommand("DELETE FROM [dbo].[owned_stocks] WHERE ticker = '" + ticker + "'", cn);
+                    cm2.ExecuteNonQuery();
+
+                    SqlCommand cm = new SqlCommand("DELETE FROM [dbo].[stocks] WHERE ticker = '" + ticker + "'", cn);
+                    cm.ExecuteNonQuery();
+
+                    cn.Close();
+                    Set_Data();
             }
             this.stocksTableAdapter.Fill(this.stock_marketDataSet.stocks);
             }

@@ -207,7 +207,7 @@ namespace INhive
 
         private void CheckButtonState()
         {
-            bool isShareTypeValid = shareType_input.Text == "atf" || shareType_input.Text == "bond" || shareType_input.Text == "stock" || shareType_input.Text == "share";
+            bool isShareTypeValid = shareType_input.Text.ToLower() == "atf" || shareType_input.Text.ToLower() == "bond" || shareType_input.Text.ToLower() == "stock" || shareType_input.Text.ToLower() == "share";
             bool isStockPriceValid = int.TryParse(stockPrice_input.Text, out _);
 
             if (isShareTypeValid && isStockPriceValid)
