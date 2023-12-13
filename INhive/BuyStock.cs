@@ -49,7 +49,7 @@ namespace INhive
 
         private void siticoneButton1_Click(object sender, EventArgs e)
         {
-            StockData stockdata = new StockData();
+            StockData stockdata = new StockData(ticker, userId);
             stockdata.Show();
             this.Hide();
         }
@@ -116,7 +116,7 @@ namespace INhive
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Stocks stocks = new Stocks();
+            Stocks stocks = new Stocks(userId);
             stocks.Show();
             this.Hide();
         }

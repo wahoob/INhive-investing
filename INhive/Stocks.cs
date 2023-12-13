@@ -34,7 +34,7 @@ namespace INhive
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
+            Home home = new Home(userId);
             home.Show();
             this.Hide();
         }

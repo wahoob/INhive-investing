@@ -117,7 +117,7 @@ namespace INhive
 
         private void siticoneButton6_Click(object sender, EventArgs e)
         {
-            BuyStock buyStock =new BuyStock(ticker);
+            BuyStock buyStock =new BuyStock(ticker, userId);
             buyStock.Show();
             this.Hide();
         }
